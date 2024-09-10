@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Essa Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <dialog class="media__modal">
+      <button onclick="hideFullMedia()">
+        <img src="assets/cross.svg" alt="" />
+      </button>
+      <div class="media-infos"></div>
+    </dialog>
+
+    <header>
+      <h1>ESSA</h1>
+    </header>
+
+    <section class="gallery">
+      <div class="gallery__loading">
+        <img src="assets/spinner.svg" alt="loading" />
+        <h1>Loading...</h1>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
