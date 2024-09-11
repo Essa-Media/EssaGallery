@@ -26,6 +26,7 @@ header {
   min-height: 100vh;
   padding: 2rem;
   & .media__container {
+    border-radius: 20px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -33,7 +34,6 @@ header {
     object-fit: contain;
     & img {
       scale: 1.1;
-      border-radius: 2px;
       width: 100%;
     }
     & .media__button {
@@ -72,6 +72,9 @@ header {
   @media (width <= 700px) {
     & {
       columns: 2;
+    }
+    & .media__container {
+      border-radius: 10px;
     }
   }
 }
