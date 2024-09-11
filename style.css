@@ -4,32 +4,34 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
-img {
-  width: 5rem;
-}
+
 header {
   z-index: 998;
   background-color: yellow;
   padding: 2rem;
 }
+
+
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  place-content: center;
-  padding: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  columns: 3;
+  columns-gap: 0.25rem;
   min-height: 100vh;
+  padding: 2rem;
 
   & .media__container {
-    background-color: black;
+    
+    break-inside: avoid;
+    /* background-color: black; */
     position: relative;
-    height: max(17vw, 10rem);
-    cursor: pointer;
     overflow: hidden;
-    flex-shrink: 0;
+    cursor: pointer;
     & img {
+      border-radius: 3vh;
       width: 100%;
-      height: 100%;
+      display: block;
+      margin-bottom: 0.5rem;
     }
     & .media__button {
       position: absolute;
@@ -45,7 +47,7 @@ header {
       -o-transform: translateY(-50%) translateX(-50%);
     }
     &:hover img {
-      scale: 1.1;
+      /* scale: 1.1; */
       transition: 500ms;
       filter: brightness(0.5);
       -webkit-filter: brightness(0.5);
