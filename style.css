@@ -22,7 +22,7 @@ header {
   place-content: center;
 }
 .gallery {
-  columns: 300px;
+  columns: 3;
   min-height: 100vh;
   padding: 2rem;
   & .media__container {
@@ -69,12 +69,18 @@ header {
       -o-transition: 400ms cubic-bezier(0, 2, 1, 1);
     }
   }
+
+  @media (width <= 1100px){
+    /* & {
+      columns: 3;
+    } */
+    & .media__container {
+      border-radius: 10px;
+    }
+  }
   @media (width <= 700px) {
     & {
       columns: 2;
-    }
-    & .media__container {
-      border-radius: 10px;
     }
   }
 }
