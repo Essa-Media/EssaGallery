@@ -53,7 +53,7 @@ function createInfos([url, type, id, uploadDate, author]) {
   <div class="img__info">
     <p><b>Type:</b> ${type}</p>
     <p><b>ID:</b> ${id}</p>
-    <p-+><b>Upload Date:</b> ${uploadDate}</p-+
+    <p><b>Upload Date:</b> ${uploadDate}</p>
     
     <p><b>Author:</b> ${author}</p>
   </div>`;
