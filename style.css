@@ -23,6 +23,7 @@ header {
 }
 .gallery {
   columns: 3;
+  column-gap: .5rem;
   min-height: 100vh;
   padding: 2rem;
   & .media__container {
@@ -71,9 +72,6 @@ header {
   }
 
   @media (width <= 1100px){
-    /* & {
-      columns: 3;
-    } */
     & .media__container {
       border-radius: 10px;
     }
