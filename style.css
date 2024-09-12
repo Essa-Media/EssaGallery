@@ -40,7 +40,7 @@ header {
     & .media__button {
       position: absolute;
       left: 50%;
-      top: 110%;
+      top: 130%;
       margin: auto;
       text-align: center;
       color: white;
