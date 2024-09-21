@@ -1,5 +1,5 @@
 const mediaDBUrl =
-  "https://essagallery.netlify.app/.netlify/functions/getall/1276406806012493845";
+  "https://essagallery.netlify.app/.netlify/functions/getall/1264214979981213827";
 const gallerySect = document.querySelector(".gallery");
 
 async function getMedias() {
