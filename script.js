@@ -1,5 +1,5 @@
 const mediaDBUrl =
-  "https://essagallery.netlify.app/.netlify/functions/getall/1264214979981213827";
+  "https://essagallery.netlify.app/.netlify/functions/getall/1276406806012493845";
 const gallerySect = document.querySelector(".gallery");
 
 async function getMedias() {
@@ -60,3 +60,29 @@ function createInfos([url, type, id, uploadDate, author]) {
 function hideFullMedia() {
   modal.close();
 }
+
+// Hero Section
+const heroSection = document.querySelector('.hero');
+
+async function getRandomImages() {
+  try {
+    const req = await fetch(mediaDBUrl);
+    const res = await req.json();
+    const medias = res.data.filter(media => media.type === 'image');
+    
+    let currentIndex = 0;
+    function changeBackground() {
+      const media = medias[currentIndex];
+      heroSection.style.backgroundImage = `url(${media.url})`;
+      currentIndex = (currentIndex + 1) % medias.length; // loop back to first image
+    }
+
+    // Change background every 15 seconds
+    changeBackground();
+    setInterval(changeBackground, 5000); // 15000ms = 15 seconds
+  } catch (err) {
+    console.error('Error fetching images:', err);
+  }
+}
+
+getRandomImages();

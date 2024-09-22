@@ -1,42 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Essa Gallery</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <dialog class="media__modal">
-      <button onclick="hideFullMedia()">  
-        <img src="assets/cross.svg" alt="" />
-      </button>
-      <div class="media-infos"></div>
-    </dialog>
 
-    <header>
-      <img class="logo" src="assets/essalogo_white.png" alt="">
-      <nav>
-        <ul class="nav__links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </nav>
-      <a href="" class="cta"><button>Contact Us</button></a>
-    </header>
-    <section id="hero">
-      
-    </section>
-    <section class="gallery grid">
-      <div class="gallery__loading">
-        <img src="assets/spinner.svg" alt="loading" />
-        <h1>Loading...</h1>
-      </div>
-    </section>
-    <footer>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Essa Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    </footer>
-    <script src="script.js"></script>
-  </body>
+<body>
+  <dialog class="media__modal">
+    <button onclick="hideFullMedia()">
+      <img src="assets/cross.svg" alt="" />
+    </button>
+    <div class="media-infos"></div>
+  </dialog>
+
+  <header>
+    <img class="logo" src="assets/essalogo_white.svg" alt="">
+    <nav>
+      <ul class="nav__links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <a href="" class="cta"><button>Contact Us</button></a>
+  </header>
+  <section class="hero" id="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <img src="assets/poweredby.png" alt="">
+      <h1>Welcome To Essa Gallery!</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati culpa earum, similique veniam illum dolor distinctio debitis corporis officia explicabo?</p>
+    </div>
+  </section>
+  <section class="gallery grid">
+    <div class="gallery__loading">
+      <img src="assets/spinner.svg" alt="loading" />
+      <h1>Loading...</h1>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+
 </html>
